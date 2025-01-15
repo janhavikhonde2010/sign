@@ -32,7 +32,7 @@ const User = mongoose.model('User', userSchema);
 const passwordValidationRegex = /^(?=(.*[a-z]){1})(?=(.*[A-Z]){1})(?=(.*\d){2})(?=(.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]){1}).{8,}$/;
 
 // Handle Signup Request
-app.post('/signup', (req, res) => {
+app.post('/index', (req, res) => {
   const { username, password, confirmPassword, email, phone, education } = req.body;
 
   // Validate password confirmation
